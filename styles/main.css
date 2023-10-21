@@ -7,16 +7,25 @@ html {
 } 
 
 body {
-    background: #899546;
+    background: #C9D5A5;
+    font-family: 'Mate', 'Lucida Bright', 'Times New Roman', serif;
 }
 h1 {
     text-align: center;
-    background: #fff;
     border-bottom-style: solid;
     border-bottom-width: 1rem;
+    font-size: 2rem;
+    padding: 0.5rem;
 }
-h3 {
-    background-color: #fff;
+#byline {
+    margin: 0 0 1rem 0;
+    padding: 0 0.5rem;
+    font-weight: bolder;
+}
+h1, #byline {
+    font-family: 'Josefin Sans', 'Verdana', 'Futura', sans-serif;
+    max-width: 650px;
+    background: #fff;
 }
 
 article {
@@ -24,13 +33,39 @@ article {
     flex-direction: column;
     align-items: center;
 }
-.life, .health {
-    max-width: 600px;
+section {
+    max-width: 650px;
 }
-div, #container {
+#container, #containertwo {
+    max-width: 100%;
+    height: 500px;
+}
+#container {
     width: 100% !important;
 }
 
 
+/* pseudo classes */
 
+a {
+    color: #8721F0;
+    text-decoration: none;
+}
+a:hover {
+    color: #B01FF5;
+}
+
+/* media query */
+@media screen and (max-width: 750px) {
+    article {
+        margin: 1rem;
+    }
+    section {
+        max-width: 100%;
+    }
+    #container, #containertwo {
+        height: 425px;
+    }
+  
+}
 

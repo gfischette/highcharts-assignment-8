@@ -3,7 +3,7 @@ Highcharts.chart('containertwo', {
         type: 'column'
     },
     title: {
-        text: 'Current GDP Expenditure spent on health in the top 10 most populated countries in North America',
+        text: 'Current GDP expenditure spent on health in the top 5 most populated countries in North America',
         align: 'left'
     },
     xAxis: {
@@ -45,7 +45,7 @@ Highcharts.chart('containertwo', {
 });
 
 
-
+/* life expectancy chart */
 
 Highcharts.chart('container', {
     chart: {
